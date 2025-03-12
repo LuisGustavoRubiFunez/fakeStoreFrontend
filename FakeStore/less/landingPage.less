@@ -8,18 +8,16 @@
  
    p{
     text-align: center;
-  
-    border-bottom: 300px;
-    border-radius: 20%;
+    user-select: none;
+    padding: 1em;
+    background-color: transparent;
     color:@textPrimaryColor;
     font-family:'Montserrat',sans-serif;
-    
+    transition: background-color 0.5s ease-in-out;
    }
    p:hover{
-  
-    
-    font-family:'Montserrat',sans-serif;
-    animation:fadeInHover 0.3s ease-in-out forwards
+    background-color: @hoverColor;
+    box-shadow: 10px 5px 5px black
    }
 }
 .header-image{
@@ -29,22 +27,69 @@
     animation:fadeIn 2s ease-in-out forwards;
     
 }
-
-    .layoutRowLandingPage{ 
-        align-items: center;
-        justify-content: center;
-        gap: 50px;
-        display: flex;
-        margin-top: 100px;
-        h1{
-            color:@textPrimaryColor;
-            font-family:'Montserrat',sans-serif;
-            opacity: 0;
-            animation:fadeIn 2s ease-in-out forwards;
-        }
+main{
+  pre{
+    color:@textPrimaryColor
+  }
+  p{
+    color:@textPrimaryColor
+  }
+  .Description{
+    background-color: @secondaryColor;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    p{
+      text-align: center;
+      color: @textPrimaryColor;
+      font-family: 'Montserrat','sans-serif';
     }
+  }
+}
+
+
+.HeroPanel{ 
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  display: flex;
+  margin-top: 100px;
+  margin-bottom:100px;
+    h1{
+      font-size: 45px;
+      color:@textPrimaryColor;
+      font-family:'Montserrat',sans-serif;
+      opacity: 0;
+      animation:fadeIn 2s ease-in-out forwards;
+      }
+}
     
-    
+main{
+  font-family: 'Montserrat','sans-serif';
+}
+
+.layoutRow{
+  align-items: center;
+    justify-content: center;
+    gap: 100px;
+    display: flex;
+    .cardLandingPage{
+
+      flex-wrap: wrap;
+      align-items: center;
+      text-align: center;
+      h2{
+        
+        color:@textPrimaryColor
+      }
+      p{
+        color:@textPrimaryColor
+      }
+      image{
+        width: 50px;
+        height: 50px;
+      }
+    }
+}
 
 @keyframes fadeIn {
     from {
@@ -55,11 +100,3 @@
     }
   }
 
-  @keyframes fadeInHover {
-    from {
-      background-color:@primaryColor;;
-    }
-    to {
-      background-color:@hoverColor;
-    }
-  }

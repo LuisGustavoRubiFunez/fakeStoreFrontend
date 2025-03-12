@@ -4,8 +4,9 @@ import viteLogo from '/vite.svg'
 import './index.css'
 import '../less/main.less'
 import Header from './components/Header'
-
-
+import HeroPanel from './components/HeroPanel'
+import Description from './components/Description'
+import EjemplosCartas from './components/EjemplosCartas'
 function App() {
 
   return (
@@ -18,7 +19,15 @@ function App() {
       </head>
       <body>
        
-        <Header text={"FakeStore"}/>
+        <Header/>
+        <HeroPanel/>
+        <main>
+        <Description/>
+        <EjemplosCartas/>
+        
+        
+        </main>
+       
     
       </body>
       </html>
