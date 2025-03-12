@@ -1,0 +1,65 @@
+
+.layoutRowLandingPageNav{
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    display: flex;
+    background-color: @navBarColorLandingPage;
+ 
+   p{
+    text-align: center;
+  
+    border-bottom: 300px;
+    border-radius: 20%;
+    color:@textPrimaryColor;
+    font-family:'Montserrat',sans-serif;
+    
+   }
+   p:hover{
+  
+    
+    font-family:'Montserrat',sans-serif;
+    animation:fadeInHover 0.3s ease-in-out forwards
+   }
+}
+.header-image{
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    animation:fadeIn 2s ease-in-out forwards;
+    
+}
+
+    .layoutRowLandingPage{ 
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        display: flex;
+        margin-top: 100px;
+        h1{
+            color:@textPrimaryColor;
+            font-family:'Montserrat',sans-serif;
+            opacity: 0;
+            animation:fadeIn 2s ease-in-out forwards;
+        }
+    }
+    
+    
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeInHover {
+    from {
+      background-color:@primaryColor;;
+    }
+    to {
+      background-color:@hoverColor;
+    }
+  }
