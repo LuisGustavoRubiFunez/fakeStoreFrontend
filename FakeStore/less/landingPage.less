@@ -1,12 +1,23 @@
+.subtitle{
+  margin-top: 50px;
+  h2{
+    color:aliceblue;
+    text-align: center;
+  }
+  p{
+    color:aliceblue;
+    text-align: center;
+  }
+}
 
 .layoutRowLandingPageNav{
     align-items: center;
     justify-content: center;
     gap: 100px;
     display: flex;
-    background-color: @navBarColorLandingPage;
- 
-   p{
+    background-color: @primaryColor;
+   
+   a{
     text-align: center;
     user-select: none;
     padding: 1em;
@@ -15,7 +26,7 @@
     font-family:'Montserrat',sans-serif;
     transition: background-color 0.5s ease-in-out;
    }
-   p:hover{
+   a:hover{
     background-color: @hoverColor;
     box-shadow: 10px 5px 5px black
    }
@@ -54,6 +65,7 @@ main{
   display: flex;
   margin-top: 100px;
   margin-bottom:100px;
+ 
     h1{
       font-size: 45px;
       color:@textPrimaryColor;
@@ -66,28 +78,50 @@ main{
 main{
   font-family: 'Montserrat','sans-serif';
 }
-
+.cardLandingPage:hover{
+  scale: 1.2;
+  
+  box-shadow: 10px 10px 10px 10px black;
+}
 .layoutRow{
+  margin-top: 40px;
   align-items: center;
     justify-content: center;
     gap: 100px;
     display: flex;
+    color:@textSecondaryColor;
     .cardLandingPage{
-
+      transition: 1s;
+      background-color: @navBarColorLandingPage;
+      border-radius: 05%;
       flex-wrap: wrap;
       align-items: center;
       text-align: center;
+     
+      .fondoAzul{
+      background-color: @primaryColor;
+      
       h2{
+        padding-bottom: 5px;
+        margin-top: 0px;
+        color:@textPrimaryColor;
         
-        color:@textPrimaryColor
+       
       }
       p{
-        color:@textPrimaryColor
+        
+        padding-top: 5px;
+        color:@textPrimaryColor;
+        padding-bottom: 5px;
+        margin-bottom: 0px;
+       
       }
       image{
         width: 50px;
         height: 50px;
+       
       }
+    }
     }
 }
 

@@ -3,8 +3,8 @@ const Header=()=>{
         <header>
             
             <nav className="layoutRowLandingPageNav">
-                <p>Caracteristicas</p>
-                <p>Redes sociales</p>
+                <a href="#productos">Productos</a>
+                <a href="#bento">Acerca de</a>
             </nav>
 
         </header>

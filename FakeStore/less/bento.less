@@ -1,0 +1,111 @@
+.bentoLandingPage {
+    margin-top: 100px;
+    
+   .primeraFila{
+    display: flex;
+    gap:25px;
+    align-items: center;
+    justify-content: center;
+    
+    margin-left: 100px;
+    margin-right: 100px;
+    .itemNothing{
+        box-shadow: 24px 24px 24px 24px rgba(0, 0, 0, 0.16);
+        background-color:#1e243f;
+        width: 40%;
+        height: 300px;
+        border-radius: 3%;
+        transition-duration: 1.5s;
+    }
+    .itemNothing:hover{
+        background-color: @hoverColor;
+        scale:1.1;
+    }
+    .itemLeft:hover{
+        background-color: @hoverColor;
+        scale:1.07;
+    }
+    .itemLeft{
+        box-shadow: 24px 24px 24px 24px rgba(0, 0, 0, 0.16);
+        border-radius: 3%;
+        background-color: @secondaryColor;
+        width: 60%; /* Ocupa el 60% del espacio disponible */
+        height: 300px;
+        transition-duration: 1.5s;
+    }
+   }
+   .segundaFila{
+    display: flex;
+    margin-top: 20px;
+    gap:25px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+   
+    .itemNothing{
+        border-radius: 3%;
+        background-color: #1e243f;
+        width: 40%;
+        height: 300px;
+        box-shadow: 24px 24px 24px 24px rgba(0, 0, 0, 0.16);
+        transition-duration: 1.5s;
+    }
+    .itemRight{
+        box-shadow: 24px 24px 24px 24px rgba(0, 0, 0, 0.16);
+        border-radius: 3%;
+        width: 60%; /* Ocupa el 60% del espacio disponible */
+        background-color: @secondaryColor;
+        height: 300px;
+        transition-duration: 1.5s;
+    }
+    .itemNothing:hover{
+        background-color: @hoverColor;
+        scale:1.1;
+    }
+    .itemRight:hover{
+        background-color: @hoverColor;
+        scale:1.07;
+    }
+
+
+   }
+  }
+.imgBento{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 64px;
+    width:64px;
+}
+.headBentoItem{
+    
+    display: flex;
+    h2{
+        color:@textPrimaryColor;
+        margin-left: 20px;
+        margin-top: 27px;
+    }
+}
+.bodyBentoItem{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+        justify-items: center;
+    .bodyBentoItemSingle{
+        display: flex;
+        justify-content: center;
+        margin-right:70px;
+        margin-left: 70px;
+        margin-top: 70px;
+        .imgBentoSingle{
+            margin-left: 20px;
+            height: 50px;
+            width: 50px;
+        }
+    }
+}
+
+.footerBentoItem{
+    margin-left: 60px;
+}
+  

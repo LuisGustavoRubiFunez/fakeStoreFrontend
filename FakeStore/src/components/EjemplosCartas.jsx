@@ -24,7 +24,7 @@ const EjemplosCartas = () => {
     }, []);
 
     return (
-        <section >
+        <section>
            {error ? (
                 <p>Error: {error}</p>
             ) : datos.length > 0 ? (
@@ -32,11 +32,14 @@ const EjemplosCartas = () => {
                     {datos.map((producto, index) => (
 
                     <div className='cardLandingPage'>
-                    
+                    <div className='fondoAzul'>
                     <h2>{producto.nombre}</h2>
+                    </div>
                     <img src={producto.imgRuta} alt="Descripción de la imagen" className="header-image"/>
+                    <div className='fondoAzul'>
                     <p>{producto.descripcion}</p>
                     <p>{producto.tipoMoneda+producto.precio}</p>
+                    </div>
                     </div>
 
                     
