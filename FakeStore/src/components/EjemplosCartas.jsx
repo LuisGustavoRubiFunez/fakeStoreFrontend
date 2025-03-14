@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 const EjemplosCartas = () => {
-    const url = 'http://localhost:3000/productos/listar';
+    const url = 'https://fakestorebackend.onrender.com/productos/listar';
     const [datos, setDatos] = useState([]);
     const [error, setError] = useState(null);
 
